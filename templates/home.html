@@ -37,18 +37,39 @@
 
         </div>
     </nav>
-  <img id="img1" src="https://website-1.murungaowen.repl.co/static/1.jpg"  alt="passion led us here" width="500" height="500">
+  <img id="img1" src="https://website-1.murungaowen.repl.co/static/1.jpg"  alt="passion led us here" >
   <div id="cont">
     <h2>Hood careers</h2>
   <p>About us</p>
     <p>.....</p>
     <p>contact us</p>
     <p>.......</p>
-    <p>Jobs</p>
-    <p>........</p>
+    <p>Jobs</p>    
+    {%for job in jobs%}
+    <div class="border-bottom m-1 p-2 row">
+        <div class="col-md-9">
+    <p ><h4>{{job['title']}}</h4></p>
+    <b><p>Location:{{job['location']}}</p></b>
+    <b><p>Salary:{{job['salary']}}</p></br></b>
+        </div>
+        <div class="col-md-3">
+   <button class ="btn btn-outline-primary">Apply</button>
+        </div>
+      </div>
+    {%endfor%}
+     
     <p>contact us</p>
     <p>.......</p>
   </div>
+  <footer class="footer bg-dark text-light">
+        
+        <div  id="cont">
+          <p class="text-light text-center">All rights reserved,Hood 2022</p>
+            <img src="" alt=""> <!--whatsapp text  -->
+            <img src="" alt=""> <!-- gmail text -->
+            <img src="" alt=""><!--  find us at github-->
+        </div>
+    </footer>
   
 </body>
 </html>

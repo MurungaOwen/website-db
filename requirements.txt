@@ -3,3 +3,4 @@ gunicorn
 sqlalchemy
 flask
 SQLAlchemy
+pymysql
